@@ -4,18 +4,12 @@
 import frappe
 from frappe.model.document import Document
 
+from whatsapp_chat.utils.phone import normalize_mobile_no
+
 
 class WhatsAppContact(Document):
 
-	def after_insert(self):
-		if self.email:
-			frappe.publish_realtime(
-				"new_room_creation", 
-				{
-					"user": self.email,  
-					"room_name": self.contact_name
-				}, 
-				user=self.email
-			)
+	def before_validate(self):
+		if self.mobile_no:
+			self.mobile_no = normalize_mobile_no(self.mobile_no)
 
-	pass

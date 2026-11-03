@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/assets/whatsapp_chat/frontend/sw.js', { scope: '/assets/whatsapp_chat/frontend/' })})}

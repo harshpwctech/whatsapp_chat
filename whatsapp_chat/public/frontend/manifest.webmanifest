@@ -1,0 +1,1 @@
+{"name":"WhatsApp Inbox","short_name":"WhatsApp","description":"WhatsApp conversation inbox","start_url":"/whatsapp-inbox","display":"standalone","background_color":"#ffffff","theme_color":"#42b883","lang":"en","scope":"/assets/whatsapp_chat/frontend/","icons":[{"src":"/assets/whatsapp_chat/manifest/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]}

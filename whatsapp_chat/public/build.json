@@ -1,4 +1,4 @@
 {
-  "js/chat.js": ["public/js/whatsapp_chat.bundle.js"],
-  "css/chat.css": ["public/scss/whatsapp_chat.scss"]
+  "js/whatsapp_inbox_navbar.js": ["public/js/whatsapp_inbox_navbar.js"],
+  "css/whatsapp_inbox_navbar.bundle.css": ["public/css/whatsapp_inbox_navbar.bundle.scss"]
 }

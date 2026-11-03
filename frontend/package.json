@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-inbox-ui",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/whatsapp_chat/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../whatsapp_chat/public/frontend/index.html ../whatsapp_chat/www/whatsapp_inbox.html",
+    "serve": "vite preview"
+  },
+    "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "dayjs": "^1.11.13",
+    "frappe-ui": "0.1.261",
+    "socket.io-client": "^4.7.2",
+    "vite": "^5.4.21",
+    "vite-plugin-pwa": "^0.21.2",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.4.15"
+  }
+}
